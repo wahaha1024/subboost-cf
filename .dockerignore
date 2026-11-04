@@ -1,0 +1,15 @@
+node_modules
+**/.next
+out
+dist
+coverage
+*.tsbuildinfo
+.env
+.env.*
+**/*.db
+data/
+local/src/generated/
+.git
+.github
+.tmp/
+tmp/

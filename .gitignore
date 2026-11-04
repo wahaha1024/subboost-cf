@@ -1,0 +1,23 @@
+node_modules/
+**/node_modules/
+.next/
+local/.next/
+out/
+dist/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+local/src/generated/
+.env
+.env.*
+!.env.example
+*.pem
+data/
+.tmp/
+tmp/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+# generated secret files
+local/.*-secrets

@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./local/src/*"],
+      "@subboost/core": ["./packages/core/src/index.ts"],
+      "@subboost/core/*": ["./packages/core/src/*"],
+      "@subboost/server-core": ["./packages/server-core/src/index.ts"],
+      "@subboost/server-core/*": ["./packages/server-core/src/*"],
+      "@subboost/ui": ["./packages/ui/src/index.ts"],
+      "@subboost/ui/*": ["./packages/ui/src/*"],
+      "@subboost/config/*": ["./packages/config/*"]
+    },
+    "target": "ES2017"
+  },
+  "include": ["local/**/*.ts", "local/**/*.tsx", "packages/**/*.ts", "packages/**/*.tsx"],
+  "exclude": ["node_modules", "dist", "local/.next", "local/src/generated"]
+}
